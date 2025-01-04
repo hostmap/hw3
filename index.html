@@ -4,20 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HW3</title>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <form action="">
-      <label>Введіть число яке більше від попереднього на 133: </label>
+    <form
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+      id="formNumber"
+    >
+      <label for="fiveDigitNumber"
+        >Введіть число яке більше від попереднього на 133:
+      </label>
       <input
+        id="fiveDigitNumber"
         type="number"
         name="userNum"
         placeholder="введіть п'ятизначне число "
         min="1"
-        max="99999"
+        maxlength="5"
         step="133"
+        value="10369"
       />
       <button type="submit">Відправити</button>
+    </form>
+    <h2>Витязь в тигровій шкурі</h2>
+    <form action="#" method="post" id="threeRows">
+      <label for="oneRows">Введіть перший рядок вірша </label>
+      <div>
+        <input
+          type="text"
+          name="oneRows"
+          value="Наші долі, як погода, змінні з кожним днем"
+        />
+      </div>
+      <br />
+      <label for="secondRows">Введіть другий рядок вірша </label>
+      <div>
+        <input
+          type="text"
+          name="secondRows"
+          value="То горить над нами сонце, то гримить над нами грім."
+        />
+      </div>
+      <br />
+      <label for="thirdRows">Введіть третій рядок вірша </label>
+      <div>
+        <input
+          type="text"
+          name="thirdRows"
+          value="Нині радість замість горя в серці спалахне вогнем."
+        />
+      </div>
+      <br />
+      <label for="fourthRows">Введіть четвертий рядок вірша </label>
+      <div>
+        <input
+          type="text"
+          name="fourthRows"
+          value="Якщо ж світ приносить радість, навіщо сумувать за ним?"
+        />
+      </div>
     </form>
   </body>
 </html>
